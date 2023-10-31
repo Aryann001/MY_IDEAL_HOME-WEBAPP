@@ -1,0 +1,17 @@
+.blogDetailsContainer {
+    width: 100vw;
+    max-width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vmax 0;
+}
+
+.blogDetailsContainer > div {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 2vmax;
+}

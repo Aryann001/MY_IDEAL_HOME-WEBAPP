@@ -1,0 +1,55 @@
+.dc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.3vmax 0;
+}
+
+.dcgrid {
+  min-height: 70vh;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5vmax;
+}
+
+.dcgrid > div:first-child {
+  display: grid;
+  grid-auto-rows: max-content;
+  gap: 2vmax;
+}
+
+.dcgrid1-2 {
+  display: flex;
+  gap: 0.5vmax;
+  align-items: center;
+}
+
+.dcgrid1-4 {
+  display: flex;
+  gap: 1.2vmax;
+  align-items: center;
+}
+
+.dcgrid > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dcgrid > div:last-child > div {
+  width: 100%;
+  height: 100%;
+}
+
+.dcgrid > div:last-child > div > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .dcgrid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+}

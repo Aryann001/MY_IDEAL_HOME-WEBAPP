@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Playpen+Sans:wght@600&display=swap");
+
+.firstContainer {
+  width: 100vw;
+  max-width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.firstContainer > div {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstContainer > div > div {
+  width: 100%;
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-row-gap: 2rem;
+}
+
+.firstContainer > div > div > div {
+  height: max-content;
+}
+
+.fc1 > h1 {
+    font-size: 2.5vmax;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.fc2 > p {
+    font-size: 1.5vmax;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.houseContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5vmax;
+  align-items: center;
+  justify-content: center;
+  padding: 5vmax 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+.houseContainer > div {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 5rem;
+  grid-column-gap: 2rem;
+}
+
+.subHouseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  align-items: center;
+  justify-content: center;
+  padding: 5vmax 0;
+}
+
+@media screen and (max-width: 700px) {
+    .firstContainer {
+        height: 50vh;
+    }
+
+    .houseContainer > div {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .houseContainer > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
