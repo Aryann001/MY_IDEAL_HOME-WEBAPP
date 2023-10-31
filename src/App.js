@@ -25,6 +25,7 @@ import UpdateHouseListing from "./components/Broker/UpdateHouseListing";
 import CreateBlog from "./components/Broker/Blog/CreateBlog";
 import BrokerBlogView from "./components/Broker/Blog/BrokerBlogView";
 import UpdateBlog from "./components/Broker/Blog/UpdateBlog";
+import NotFound from "./components/Layout/NotFound/NotFound";
 
 function App() {
   useEffect(() => {
@@ -73,6 +74,8 @@ function App() {
             element={<UpdateBlog />}
           />
         </Route>
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
