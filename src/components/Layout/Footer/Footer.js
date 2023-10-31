@@ -110,7 +110,7 @@ export default function LargeWithLogoCentered() {
           <img src={Logo} alt="logo" className="logo" />
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-          © 2023 Blue Store By Aryan. All rights reserved
+          © 2023 My Ideal Home By Aryan. All rights reserved
         </Text>
       </Box>
     </Box>
