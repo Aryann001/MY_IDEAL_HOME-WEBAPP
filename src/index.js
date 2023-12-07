@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import { ChakraProvider } from "@chakra-ui/react";
 
-export const server = `https://my-ideal-home-api.onrender.com/api/v1`;
+export const server = `https://my-ideal-home-api.vercel.app/api/v1`;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
