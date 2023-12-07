@@ -82,7 +82,7 @@ export default function WithSubnavigation() {
             color={useColorModeValue("gray.800", "white")}
           >
             <img
-              onClick={() => navigate(`/home`)}
+              onClick={() => navigate(`/`)}
               src={logo}
               alt="logo"
               className="logo"
